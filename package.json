@@ -8,8 +8,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "scrape:lima": "node auditor/engine/runAudit.js",
-    "predev": "node scripts/sync-catalog.mjs",
-    "prebuild": "node scripts/sync-catalog.mjs",
+    "predev": "node scripts/sync-brand.mjs && node scripts/sync-catalog.mjs",
+    "prebuild": "node scripts/sync-brand.mjs && node scripts/sync-catalog.mjs",
+    "brand:sync": "node scripts/sync-brand.mjs",
     "catalog:sync": "node scripts/sync-catalog.mjs"
   },
   "dependencies": {

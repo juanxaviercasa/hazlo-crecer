@@ -1,0 +1,62 @@
+/* Identity 1.1: a warm commercial surface, with the approved dark logo v1. */
+:root {
+  color-scheme: light;
+  --bg-main: var(--brand-background);
+  --bg-subtle: #eef2e9;
+  --panel: var(--brand-surface);
+  --panel-elevated: var(--brand-surface);
+  --panel-glass: var(--brand-surface);
+  --panel-hover: #edf4ed;
+  --line: var(--brand-border);
+  --line-subtle: rgba(23, 37, 29, .12);
+  --green: var(--brand-primary);
+  --green-hover: var(--brand-primary-hover);
+  --green-dark: #e4efe6;
+  --green-subtle: rgba(23, 107, 69, .08);
+  --green-glow: none;
+  --text: var(--brand-text);
+  --text-secondary: var(--brand-muted);
+  --muted: var(--brand-muted);
+}
+
+body { background-image: none; font-size: 16px; }
+.site-header { background: var(--brand-background); border-bottom: 1px solid var(--line); backdrop-filter: none; }
+.brand { color: var(--text); flex-shrink: 0; gap: 8px; }
+.brand-logo-img { background: var(--brand-logo-background); }
+.brand-wordmark { white-space: nowrap; }
+.brand > .brand-wordmark { color: var(--brand-text); }
+.brand-wordmark span { color: var(--brand-primary); }
+.nav-links a { padding-block: 12px; }
+.nav-links a:hover { color: var(--brand-primary); }
+.mobile-menu-toggle { color: var(--text); background: var(--brand-surface); }
+.button { color: var(--brand-on-primary); white-space: normal; text-align: center; min-height: 44px; }
+.button:hover { box-shadow: 0 4px 12px rgba(23, 37, 29, .12); }
+.button.ghost, .button.ghost:hover { color: var(--brand-primary); background: var(--brand-surface); border-color: var(--line); }
+.open-card { backdrop-filter: none; box-shadow: 0 4px 16px rgba(23, 37, 29, .04); }
+.open-card:hover { border-color: var(--brand-primary); box-shadow: 0 6px 20px rgba(23, 37, 29, .07); }
+.eyebrow { color: var(--brand-primary); background: #e4efe6; border-color: var(--line); backdrop-filter: none; }
+.hero { text-align: left; border-bottom: 1px solid var(--line); }
+.hero h1 { max-width: 1000px; margin-block: 24px; font-family: var(--font-display); letter-spacing: -.035em; }
+.hero p { max-width: 720px; margin-block: 20px; color: var(--text-secondary); }
+.hero .button { margin-top: 8px; }
+main h2, main h3 { font-family: var(--font-display); line-height: 1.25; }
+main h2 { margin-bottom: 16px; font-size: clamp(1.6rem, 3vw, 2.2rem); }
+main h3 { margin-bottom: 12px; }
+main ol { padding-left: 24px; margin-block: 24px; }
+main li + li { margin-top: 12px; }
+main p a, .marketing-panel > a:not(.button), .site-footer a { color: var(--brand-primary); text-decoration: underline; text-underline-offset: 4px; }
+.marketing-panel input, .marketing-panel select { color: var(--text); background: var(--brand-surface); border-color: var(--brand-muted); }
+.marketing-panel input[type=checkbox] { accent-color: var(--brand-primary); }
+.marketing-panel input:focus { border-color: var(--brand-primary); box-shadow: none; }
+.marketing-panel input::placeholder { color: var(--brand-muted); }
+.marketing-error { color: #a52a32; }
+.marketing-panel :focus-visible, a:focus-visible, button:focus-visible { outline-color: var(--brand-primary); }
+.site-footer { background: #eef2e9; border-top: 1px solid var(--line); color: var(--text-secondary); }
+.site-footer p { margin-bottom: 16px; }
+.site-footer a { display: inline-block; padding-block: 10px; }
+::selection { background: var(--brand-accent); color: var(--brand-text); }
+@media (max-width: 767px) {
+  .container { width: calc(100% - 32px); }
+  .brand { font-size: 18px; gap: 7px; }
+  .nav { min-height: 72px; height: auto; padding-block: 12px; }
+}
