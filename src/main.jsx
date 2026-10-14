@@ -5,3 +5,5 @@ import './styles.css';
 import './admin.css';
 
 createRoot(document.getElementById('root')).render(<AppRouter />);
+
+import './marketing.css';

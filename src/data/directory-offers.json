@@ -1,0 +1,823 @@
+{
+  "schema_version": "1.0",
+  "source": "todo_lima_supabase_public_projection",
+  "directory_sha256": "366e0bdd1b1635f591817b5479aa16f023e2e6925fcfcd1240847c6d656a7535",
+  "taxonomy_sha256": "a7ea11e09e409d7408e08709897d5e39aa3c0440a449c3f11cfc275454903d10",
+  "areas": [
+    {
+      "slug": "comer-y-beber",
+      "title": "Comer y beber"
+    },
+    {
+      "slug": "hogar-y-reparaciones",
+      "title": "Hogar y reparaciones"
+    },
+    {
+      "slug": "construccion-y-remodelacion",
+      "title": "Construcción y remodelación"
+    },
+    {
+      "slug": "salud-y-bienestar",
+      "title": "Salud y bienestar"
+    },
+    {
+      "slug": "belleza-y-cuidado-personal",
+      "title": "Belleza y cuidado personal"
+    },
+    {
+      "slug": "mascotas",
+      "title": "Mascotas"
+    },
+    {
+      "slug": "vehiculos-y-movilidad",
+      "title": "Vehículos y movilidad"
+    },
+    {
+      "slug": "compras-y-comercio-local",
+      "title": "Compras y comercio local"
+    },
+    {
+      "slug": "turismo-y-experiencias",
+      "title": "Turismo y experiencias"
+    },
+    {
+      "slug": "educacion-y-talleres",
+      "title": "Educación y talleres"
+    },
+    {
+      "slug": "deporte-y-actividad-fisica",
+      "title": "Deporte y actividad física"
+    },
+    {
+      "slug": "eventos-y-celebraciones",
+      "title": "Eventos y celebraciones"
+    },
+    {
+      "slug": "servicios-profesionales",
+      "title": "Servicios profesionales"
+    },
+    {
+      "slug": "proveedores-para-negocios",
+      "title": "Proveedores para negocios"
+    }
+  ],
+  "categories": [
+    {
+      "slug": "doctores",
+      "area_slug": "salud-y-bienestar",
+      "title": "Doctores y Médicos Especialistas en Lima",
+      "path": "/salud-y-bienestar/doctores"
+    },
+    {
+      "slug": "dentistas",
+      "area_slug": "salud-y-bienestar",
+      "title": "Dentistas y Clínicas Odontológicas en Lima",
+      "path": "/salud-y-bienestar/dentistas"
+    },
+    {
+      "slug": "psicologos",
+      "area_slug": "salud-y-bienestar",
+      "title": "Psicólogos y Terapeutas en Lima",
+      "path": "/salud-y-bienestar/psicologos"
+    },
+    {
+      "slug": "pediatras",
+      "area_slug": "salud-y-bienestar",
+      "title": "Pediatras y Especialistas Infantiles en Lima",
+      "path": "/salud-y-bienestar/pediatras"
+    },
+    {
+      "slug": "dermatologos",
+      "area_slug": "salud-y-bienestar",
+      "title": "Dermatólogos y Clínicas de la Piel en Lima",
+      "path": "/salud-y-bienestar/dermatologos"
+    },
+    {
+      "slug": "veterinarias",
+      "area_slug": "mascotas",
+      "title": "Veterinarias y Clínicas de Mascotas en Lima",
+      "path": "/mascotas/veterinarias"
+    },
+    {
+      "slug": "fisioterapia",
+      "area_slug": "salud-y-bienestar",
+      "title": "Centros de Fisioterapia y Rehabilitación en Lima",
+      "path": "/salud-y-bienestar/fisioterapia"
+    },
+    {
+      "slug": "nutricionistas",
+      "area_slug": "salud-y-bienestar",
+      "title": "Nutricionistas y Asesoría Dietética en Lima",
+      "path": "/salud-y-bienestar/nutricionistas"
+    },
+    {
+      "slug": "oftalmologos",
+      "area_slug": "salud-y-bienestar",
+      "title": "Oftalmólogos y Clínicas de Ojos en Lima",
+      "path": "/salud-y-bienestar/oftalmologos"
+    },
+    {
+      "slug": "ginecologos",
+      "area_slug": "salud-y-bienestar",
+      "title": "Ginecólogos y Salud de la Mujer en Lima",
+      "path": "/salud-y-bienestar/ginecologos"
+    },
+    {
+      "slug": "cerrajeros",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Cerrajeros y Servicios de Cerrajería en Lima",
+      "path": "/hogar-y-reparaciones/cerrajeros"
+    },
+    {
+      "slug": "gasfiteros",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Gasfiteros y Plomeros Profesionales en Lima",
+      "path": "/hogar-y-reparaciones/gasfiteros"
+    },
+    {
+      "slug": "electricistas",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Electricistas e Instalaciones Eléctricas en Lima",
+      "path": "/hogar-y-reparaciones/electricistas"
+    },
+    {
+      "slug": "pintores",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Pintores de Casas y Edificios en Lima",
+      "path": "/hogar-y-reparaciones/pintores"
+    },
+    {
+      "slug": "fumigacion",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Empresas de Fumigación y Control de Plagas en Lima",
+      "path": "/hogar-y-reparaciones/fumigacion"
+    },
+    {
+      "slug": "mudanzas",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Empresas de Mudanzas y Fletes en Lima",
+      "path": "/hogar-y-reparaciones/mudanzas"
+    },
+    {
+      "slug": "aire-acondicionado",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Técnicos de Aire Acondicionado y Climatización en Lima",
+      "path": "/hogar-y-reparaciones/aire-acondicionado"
+    },
+    {
+      "slug": "reparacion-lavadoras",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Técnicos de Reparación de Lavadoras en Lima",
+      "path": "/hogar-y-reparaciones/reparacion-lavadoras"
+    },
+    {
+      "slug": "reparacion-refrigeradoras",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Reparación de Refrigeradoras y Neveras en Lima",
+      "path": "/hogar-y-reparaciones/reparacion-refrigeradoras"
+    },
+    {
+      "slug": "vidrierias",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Vidrierías y Mamparas de Vidrio en Lima",
+      "path": "/hogar-y-reparaciones/vidrierias"
+    },
+    {
+      "slug": "carpinteros",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Carpinteros y Muebles de Melamina en Lima",
+      "path": "/hogar-y-reparaciones/carpinteros"
+    },
+    {
+      "slug": "abogados",
+      "area_slug": "servicios-profesionales",
+      "title": "Estudios de Abogados y Asesoría Legal en Lima",
+      "path": "/servicios-profesionales/abogados"
+    },
+    {
+      "slug": "notarias",
+      "area_slug": "servicios-profesionales",
+      "title": "Notarías Públicas en Lima",
+      "path": "/servicios-profesionales/notarias"
+    },
+    {
+      "slug": "contadores",
+      "area_slug": "servicios-profesionales",
+      "title": "Contadores Públicos y Asesoría Tributaria en Lima",
+      "path": "/servicios-profesionales/contadores"
+    },
+    {
+      "slug": "agentes-inmobiliarios",
+      "area_slug": "servicios-profesionales",
+      "title": "Agentes Inmobiliarios y Venta de Propiedades en Lima",
+      "path": "/servicios-profesionales/agentes-inmobiliarios"
+    },
+    {
+      "slug": "talleres-mecanicos",
+      "area_slug": "vehiculos-y-movilidad",
+      "title": "Talleres Mecánicos y Servicio Automotriz en Lima",
+      "path": "/vehiculos-y-movilidad/talleres-mecanicos"
+    },
+    {
+      "slug": "car-wash",
+      "area_slug": "vehiculos-y-movilidad",
+      "title": "Car Wash y Detallado Automotriz en Lima",
+      "path": "/vehiculos-y-movilidad/car-wash"
+    },
+    {
+      "slug": "llanterias",
+      "area_slug": "vehiculos-y-movilidad",
+      "title": "Llanterías y Venta de Neumáticos en Lima",
+      "path": "/vehiculos-y-movilidad/llanterias"
+    },
+    {
+      "slug": "auxilio-mecanico",
+      "area_slug": "vehiculos-y-movilidad",
+      "title": "Grúas y Auxilio Mecánico en Lima",
+      "path": "/vehiculos-y-movilidad/auxilio-mecanico"
+    },
+    {
+      "slug": "catering",
+      "area_slug": "eventos-y-celebraciones",
+      "title": "Empresas de Catering y Buffet en Lima",
+      "path": "/eventos-y-celebraciones/catering"
+    },
+    {
+      "slug": "tortas-personalizadas",
+      "area_slug": "eventos-y-celebraciones",
+      "title": "Pastelerías y Tortas Temáticas en Lima",
+      "path": "/eventos-y-celebraciones/tortas-personalizadas"
+    },
+    {
+      "slug": "fotografia-eventos",
+      "area_slug": "eventos-y-celebraciones",
+      "title": "Fotógrafos Profesionales y Cobertura de Eventos en Lima",
+      "path": "/eventos-y-celebraciones/fotografia-eventos"
+    },
+    {
+      "slug": "barberias",
+      "area_slug": "belleza-y-cuidado-personal",
+      "title": "Barberías y Cortes de Cabello para Hombres en Lima",
+      "path": "/belleza-y-cuidado-personal/barberias"
+    },
+    {
+      "slug": "salones-de-belleza",
+      "area_slug": "belleza-y-cuidado-personal",
+      "title": "Salones de Belleza y Peluquerías en Lima",
+      "path": "/belleza-y-cuidado-personal/salones-de-belleza"
+    },
+    {
+      "slug": "spas",
+      "area_slug": "belleza-y-cuidado-personal",
+      "title": "Spas y Centros de Masajes en Lima",
+      "path": "/belleza-y-cuidado-personal/spas"
+    },
+    {
+      "slug": "reparacion-celulares",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Reparación de Celulares y Tablets en Lima",
+      "path": "/hogar-y-reparaciones/reparacion-celulares"
+    },
+    {
+      "slug": "reparacion-laptops",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Servicio Técnico de Laptops y Computadoras en Lima",
+      "path": "/hogar-y-reparaciones/reparacion-laptops"
+    },
+    {
+      "slug": "camaras-de-seguridad",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Instalación de Cámaras de Seguridad y Alarmas en Lima",
+      "path": "/hogar-y-reparaciones/camaras-de-seguridad"
+    },
+    {
+      "slug": "cevicherias",
+      "area_slug": "comer-y-beber",
+      "title": "Cevicherías y Marisquerías en Lima",
+      "path": "/comer-y-beber/cevicherias"
+    },
+    {
+      "slug": "pollerias",
+      "area_slug": "comer-y-beber",
+      "title": "Pollerías y Pollos a la Brasa en Lima",
+      "path": "/comer-y-beber/pollerias"
+    },
+    {
+      "slug": "chifas",
+      "area_slug": "comer-y-beber",
+      "title": "Chifas y Restaurantes Orientales en Lima",
+      "path": "/comer-y-beber/chifas"
+    },
+    {
+      "slug": "pizzerias",
+      "area_slug": "comer-y-beber",
+      "title": "Pizzerías Artesanales y Tradicionales en Lima",
+      "path": "/comer-y-beber/pizzerias"
+    },
+    {
+      "slug": "cafeterias",
+      "area_slug": "comer-y-beber",
+      "title": "Cafeterías de Especialidad y Brunch en Lima",
+      "path": "/comer-y-beber/cafeterias"
+    },
+    {
+      "slug": "florerias",
+      "area_slug": "compras-y-comercio-local",
+      "title": "Florerías y Delivery de Regalos en Lima",
+      "path": "/compras-y-comercio-local/florerias"
+    },
+    {
+      "slug": "opticas",
+      "area_slug": "salud-y-bienestar",
+      "title": "Ópticas y Salud Visual en Lima",
+      "path": "/salud-y-bienestar/opticas"
+    },
+    {
+      "slug": "lavanderias",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Lavanderías y Tintorerías en Lima",
+      "path": "/hogar-y-reparaciones/lavanderias"
+    },
+    {
+      "slug": "escuelas-de-manejo",
+      "area_slug": "vehiculos-y-movilidad",
+      "title": "Escuelas de Conductores y Brevetes en Lima",
+      "path": "/vehiculos-y-movilidad/escuelas-de-manejo"
+    },
+    {
+      "slug": "casas-de-cambio",
+      "area_slug": "servicios-profesionales",
+      "title": "Casas de Cambio y Compra/Venta de Dólares en Lima",
+      "path": "/servicios-profesionales/casas-de-cambio"
+    },
+    {
+      "slug": "podologos",
+      "area_slug": "salud-y-bienestar",
+      "title": "Podólogos y Clínicas del Pie en Lima",
+      "path": "/salud-y-bienestar/podologos"
+    },
+    {
+      "slug": "laboratorios-clinicos",
+      "area_slug": "salud-y-bienestar",
+      "title": "Laboratorios de Análisis Clínicos en Lima",
+      "path": "/salud-y-bienestar/laboratorios-clinicos"
+    },
+    {
+      "slug": "traumatologos",
+      "area_slug": "salud-y-bienestar",
+      "title": "Traumatólogos y Especialistas de Columna en Lima",
+      "path": "/salud-y-bienestar/traumatologos"
+    },
+    {
+      "slug": "grooming-canino",
+      "area_slug": "mascotas",
+      "title": "Peluquería Canina y Spa de Mascotas en Lima",
+      "path": "/mascotas/grooming-canino"
+    },
+    {
+      "slug": "gimnasios",
+      "area_slug": "deporte-y-actividad-fisica",
+      "title": "Gimnasios y Centros Fitness en Lima",
+      "path": "/deporte-y-actividad-fisica/gimnasios"
+    },
+    {
+      "slug": "locales-de-eventos",
+      "area_slug": "eventos-y-celebraciones",
+      "title": "Salones y Locales de Eventos en Lima",
+      "path": "/eventos-y-celebraciones/locales-de-eventos"
+    },
+    {
+      "slug": "decoracion-de-eventos",
+      "area_slug": "eventos-y-celebraciones",
+      "title": "Decoración de Fiestas y Eventos en Lima",
+      "path": "/eventos-y-celebraciones/decoracion-de-eventos"
+    },
+    {
+      "slug": "alquiler-de-canchas",
+      "area_slug": "deporte-y-actividad-fisica",
+      "title": "Alquiler de Canchas Sintéticas en Lima",
+      "path": "/deporte-y-actividad-fisica/alquiler-de-canchas"
+    },
+    {
+      "slug": "restaurantes-criollos",
+      "area_slug": "comer-y-beber",
+      "title": "Restaurantes Criollos y Tradicionales en Lima",
+      "path": "/comer-y-beber/restaurantes-criollos"
+    },
+    {
+      "slug": "comida-regional",
+      "area_slug": "comer-y-beber",
+      "title": "Restaurantes de Comida Regional Peruana en Lima",
+      "path": "/comer-y-beber/comida-regional"
+    },
+    {
+      "slug": "anticucherias",
+      "area_slug": "comer-y-beber",
+      "title": "Anticucherías y Brasas Tradicionales en Lima",
+      "path": "/comer-y-beber/anticucherias"
+    },
+    {
+      "slug": "sangucherias",
+      "area_slug": "comer-y-beber",
+      "title": "Sangucherías Tradicionales y Chicharronerías en Lima",
+      "path": "/comer-y-beber/sangucherias"
+    },
+    {
+      "slug": "carnes-y-parrillas",
+      "area_slug": "comer-y-beber",
+      "title": "Restaurantes de Carnes y Parrillas en Lima",
+      "path": "/comer-y-beber/carnes-y-parrillas"
+    },
+    {
+      "slug": "restaurantes-vegetarianos",
+      "area_slug": "comer-y-beber",
+      "title": "Restaurantes Vegetarianos y Veganos en Lima",
+      "path": "/comer-y-beber/restaurantes-vegetarianos"
+    },
+    {
+      "slug": "restaurantes-nikkei",
+      "area_slug": "comer-y-beber",
+      "title": "Restaurantes Nikkei y Fusión Japonesa en Lima",
+      "path": "/comer-y-beber/restaurantes-nikkei"
+    },
+    {
+      "slug": "panaderias-artesanales",
+      "area_slug": "comer-y-beber",
+      "title": "Panaderías Artesanales y Masa Madre en Lima",
+      "path": "/comer-y-beber/panaderias-artesanales"
+    },
+    {
+      "slug": "heladerias-artesanales",
+      "area_slug": "comer-y-beber",
+      "title": "Heladerías Artesanales y Gelaterías en Lima",
+      "path": "/comer-y-beber/heladerias-artesanales"
+    },
+    {
+      "slug": "dulcerias-tradicionales",
+      "area_slug": "comer-y-beber",
+      "title": "Dulcerías Tradicionales y Postres Limeños en Lima",
+      "path": "/comer-y-beber/dulcerias-tradicionales"
+    },
+    {
+      "slug": "productos-naturales",
+      "area_slug": "compras-y-comercio-local",
+      "title": "Tiendas de Productos Naturales y Orgánicos en Lima",
+      "path": "/compras-y-comercio-local/productos-naturales"
+    },
+    {
+      "slug": "restaurantes-campestres",
+      "area_slug": "comer-y-beber",
+      "title": "Restaurantes Campestres y Recreos Familiares en Lima",
+      "path": "/comer-y-beber/restaurantes-campestres"
+    },
+    {
+      "slug": "agencias-de-turismo",
+      "area_slug": "turismo-y-experiencias",
+      "title": "Agencias de Turismo Receptivo y Viajes en Lima",
+      "path": "/turismo-y-experiencias/agencias-de-turismo"
+    },
+    {
+      "slug": "tours-y-experiencias",
+      "area_slug": "turismo-y-experiencias",
+      "title": "Tours Urbanos y Recorridos Guiados en Lima",
+      "path": "/turismo-y-experiencias/tours-y-experiencias"
+    },
+    {
+      "slug": "guias-de-turismo",
+      "area_slug": "turismo-y-experiencias",
+      "title": "Guías Oficiales de Turismo en Lima",
+      "path": "/turismo-y-experiencias/guias-de-turismo"
+    },
+    {
+      "slug": "hoteles",
+      "area_slug": "turismo-y-experiencias",
+      "title": "Hoteles y Alojamientos Ejecutivos en Lima",
+      "path": "/turismo-y-experiencias/hoteles"
+    },
+    {
+      "slug": "hostales-y-alojamientos",
+      "area_slug": "turismo-y-experiencias",
+      "title": "Hostales Turísticos y Alojamientos en Lima",
+      "path": "/turismo-y-experiencias/hostales-y-alojamientos"
+    },
+    {
+      "slug": "alquiler-de-bicicletas",
+      "area_slug": "turismo-y-experiencias",
+      "title": "Alquiler de Bicicletas y Movilidad Sostenible en Lima",
+      "path": "/turismo-y-experiencias/alquiler-de-bicicletas"
+    },
+    {
+      "slug": "escuelas-de-surf",
+      "area_slug": "deporte-y-actividad-fisica",
+      "title": "Escuelas de Surf y Clases de Tabla en la Costa Verde",
+      "path": "/deporte-y-actividad-fisica/escuelas-de-surf"
+    },
+    {
+      "slug": "penas-criollas",
+      "area_slug": "turismo-y-experiencias",
+      "title": "Peñas Criollas y Centros Musicales en Lima",
+      "path": "/turismo-y-experiencias/penas-criollas"
+    },
+    {
+      "slug": "talleres-de-artesania",
+      "area_slug": "educacion-y-talleres",
+      "title": "Talleres de Artesanía y Cerámica en Lima",
+      "path": "/educacion-y-talleres/talleres-de-artesania"
+    },
+    {
+      "slug": "tiendas-de-artesania",
+      "area_slug": "compras-y-comercio-local",
+      "title": "Tiendas de Artesanía Peruana y Souvenirs en Lima",
+      "path": "/compras-y-comercio-local/tiendas-de-artesania"
+    },
+    {
+      "slug": "librerias",
+      "area_slug": "compras-y-comercio-local",
+      "title": "Librerías y Venta de Libros en Lima",
+      "path": "/compras-y-comercio-local/librerias"
+    },
+    {
+      "slug": "tiendas-de-mascotas",
+      "area_slug": "mascotas",
+      "title": "Tiendas de Mascotas y Pet Shops en Lima",
+      "path": "/mascotas/tiendas-de-mascotas"
+    },
+    {
+      "slug": "ferreterias",
+      "area_slug": "compras-y-comercio-local",
+      "title": "Ferreterías y Materiales de Mantenimiento en Lima",
+      "path": "/compras-y-comercio-local/ferreterias"
+    },
+    {
+      "slug": "tiendas-de-bicicletas",
+      "area_slug": "compras-y-comercio-local",
+      "title": "Tiendas de Bicicletas y Accesorios en Lima",
+      "path": "/compras-y-comercio-local/tiendas-de-bicicletas"
+    },
+    {
+      "slug": "reparacion-de-bicicletas",
+      "area_slug": "vehiculos-y-movilidad",
+      "title": "Talleres de Reparación y Mecánica de Bicicletas en Lima",
+      "path": "/vehiculos-y-movilidad/reparacion-de-bicicletas"
+    },
+    {
+      "slug": "zapaterias",
+      "area_slug": "compras-y-comercio-local",
+      "title": "Zapaterías y Venta de Calzado en Lima",
+      "path": "/compras-y-comercio-local/zapaterias"
+    },
+    {
+      "slug": "reparacion-de-calzado",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Talleres de Reparación de Calzado y Renovadoras en Lima",
+      "path": "/hogar-y-reparaciones/reparacion-de-calzado"
+    },
+    {
+      "slug": "sastrerias",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Sastrerías y Arreglos de Ropa en Lima",
+      "path": "/hogar-y-reparaciones/sastrerias"
+    },
+    {
+      "slug": "empresas-de-limpieza",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Empresas de Limpieza y Mantenimiento en Lima",
+      "path": "/hogar-y-reparaciones/empresas-de-limpieza"
+    },
+    {
+      "slug": "limpieza-de-muebles",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Limpieza y Lavado de Muebles y Colchones en Lima",
+      "path": "/hogar-y-reparaciones/limpieza-de-muebles"
+    },
+    {
+      "slug": "limpieza-de-cisternas",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Limpieza y Desinfección de Cisternas y Tanques en Lima",
+      "path": "/hogar-y-reparaciones/limpieza-de-cisternas"
+    },
+    {
+      "slug": "desatoros",
+      "area_slug": "hogar-y-reparaciones",
+      "title": "Servicios de Desatoros y Máquinas Eléctricas en Lima",
+      "path": "/hogar-y-reparaciones/desatoros"
+    },
+    {
+      "slug": "impermeabilizacion",
+      "area_slug": "construccion-y-remodelacion",
+      "title": "Impermeabilización de Techos y Terrazas en Lima",
+      "path": "/construccion-y-remodelacion/impermeabilizacion"
+    },
+    {
+      "slug": "albanileria-y-remodelaciones",
+      "area_slug": "construccion-y-remodelacion",
+      "title": "Albañilería, Acabados y Remodelaciones en Lima",
+      "path": "/construccion-y-remodelacion/albanileria-y-remodelaciones"
+    },
+    {
+      "slug": "arquitectura",
+      "area_slug": "construccion-y-remodelacion",
+      "title": "Estudios de Arquitectura y Planos en Lima",
+      "path": "/construccion-y-remodelacion/arquitectura"
+    },
+    {
+      "slug": "diseno-de-interiores",
+      "area_slug": "construccion-y-remodelacion",
+      "title": "Diseño de Interiores y Decoración en Lima",
+      "path": "/construccion-y-remodelacion/diseno-de-interiores"
+    },
+    {
+      "slug": "jardineria",
+      "area_slug": "construccion-y-remodelacion",
+      "title": "Jardinería, Paisajismo y Áreas Verdes en Lima",
+      "path": "/construccion-y-remodelacion/jardineria"
+    },
+    {
+      "slug": "estructuras-metalicas",
+      "area_slug": "construccion-y-remodelacion",
+      "title": "Estructuras Metálicas y Soldadura en Lima",
+      "path": "/construccion-y-remodelacion/estructuras-metalicas"
+    },
+    {
+      "slug": "imprentas",
+      "area_slug": "proveedores-para-negocios",
+      "title": "Imprentas Comerciales y Gráficas en Lima",
+      "path": "/proveedores-para-negocios/imprentas"
+    },
+    {
+      "slug": "impresion-gran-formato",
+      "area_slug": "proveedores-para-negocios",
+      "title": "Impresión de Gran Formato y Gigantografías en Lima",
+      "path": "/proveedores-para-negocios/impresion-gran-formato"
+    },
+    {
+      "slug": "letreros-y-senaletica",
+      "area_slug": "proveedores-para-negocios",
+      "title": "Letreros Publicitarios y Señalética en Lima",
+      "path": "/proveedores-para-negocios/letreros-y-senaletica"
+    },
+    {
+      "slug": "envases-y-embalajes",
+      "area_slug": "proveedores-para-negocios",
+      "title": "Proveedores de Envases, Cajas y Embalajes en Lima",
+      "path": "/proveedores-para-negocios/envases-y-embalajes"
+    },
+    {
+      "slug": "uniformes-empresariales",
+      "area_slug": "proveedores-para-negocios",
+      "title": "Uniformes Empresariales e Industriales en Lima",
+      "path": "/proveedores-para-negocios/uniformes-empresariales"
+    },
+    {
+      "slug": "bordados-y-estampados",
+      "area_slug": "proveedores-para-negocios",
+      "title": "Bordados Computarizados y Estampados en Lima",
+      "path": "/proveedores-para-negocios/bordados-y-estampados"
+    },
+    {
+      "slug": "reparacion-de-impresoras",
+      "area_slug": "proveedores-para-negocios",
+      "title": "Servicio Técnico de Impresoras y Fotocopiadoras en Lima",
+      "path": "/proveedores-para-negocios/reparacion-de-impresoras"
+    },
+    {
+      "slug": "refrigeracion-comercial",
+      "area_slug": "proveedores-para-negocios",
+      "title": "Refrigeración Comercial e Industrial en Lima",
+      "path": "/proveedores-para-negocios/refrigeracion-comercial"
+    },
+    {
+      "slug": "equipos-gastronomicos",
+      "area_slug": "proveedores-para-negocios",
+      "title": "Equipamiento Gastronómico y Cocinas Industriales en Lima",
+      "path": "/proveedores-para-negocios/equipos-gastronomicos"
+    },
+    {
+      "slug": "courier-y-mensajeria",
+      "area_slug": "proveedores-para-negocios",
+      "title": "Courier Local y Mensajería Express Corporativa en Lima",
+      "path": "/proveedores-para-negocios/courier-y-mensajeria"
+    },
+    {
+      "slug": "academias-de-idiomas",
+      "area_slug": "educacion-y-talleres",
+      "title": "Institutos y Academias de Idiomas en Lima",
+      "path": "/educacion-y-talleres/academias-de-idiomas"
+    },
+    {
+      "slug": "academias-preuniversitarias",
+      "area_slug": "educacion-y-talleres",
+      "title": "Academias Preuniversitarias en Lima",
+      "path": "/educacion-y-talleres/academias-preuniversitarias"
+    },
+    {
+      "slug": "clases-particulares",
+      "area_slug": "educacion-y-talleres",
+      "title": "Clases Particulares y Reforzamiento Académico en Lima",
+      "path": "/educacion-y-talleres/clases-particulares"
+    },
+    {
+      "slug": "escuelas-de-musica",
+      "area_slug": "educacion-y-talleres",
+      "title": "Escuelas de Música y Clases de Canto en Lima",
+      "path": "/educacion-y-talleres/escuelas-de-musica"
+    },
+    {
+      "slug": "escuelas-de-danza",
+      "area_slug": "educacion-y-talleres",
+      "title": "Academias de Danza, Marinera y Baile en Lima",
+      "path": "/educacion-y-talleres/escuelas-de-danza"
+    },
+    {
+      "slug": "talleres-de-arte",
+      "area_slug": "educacion-y-talleres",
+      "title": "Talleres de Arte, Dibujo y Pintura en Lima",
+      "path": "/educacion-y-talleres/talleres-de-arte"
+    },
+    {
+      "slug": "hospedajes-para-mascotas",
+      "area_slug": "mascotas",
+      "title": "Hospedajes y Hoteles para Mascotas en Lima",
+      "path": "/mascotas/hospedajes-para-mascotas"
+    },
+    {
+      "slug": "guarderias-caninas",
+      "area_slug": "mascotas",
+      "title": "Guarderías Caninas y Recreación de Día en Lima",
+      "path": "/mascotas/guarderias-caninas"
+    },
+    {
+      "slug": "adiestramiento-canino",
+      "area_slug": "mascotas",
+      "title": "Adiestramiento Canino y Educación Positiva en Lima",
+      "path": "/mascotas/adiestramiento-canino"
+    },
+    {
+      "slug": "paseadores-de-perros",
+      "area_slug": "mascotas",
+      "title": "Paseadores de Perros Profesionales en Lima",
+      "path": "/mascotas/paseadores-de-perros"
+    },
+    {
+      "slug": "estudios-de-yoga",
+      "area_slug": "deporte-y-actividad-fisica",
+      "title": "Estudios de Yoga y Meditación en Lima",
+      "path": "/deporte-y-actividad-fisica/estudios-de-yoga"
+    },
+    {
+      "slug": "estudios-de-pilates",
+      "area_slug": "deporte-y-actividad-fisica",
+      "title": "Estudios de Pilates Reformer en Lima",
+      "path": "/deporte-y-actividad-fisica/estudios-de-pilates"
+    },
+    {
+      "slug": "academias-de-natacion",
+      "area_slug": "deporte-y-actividad-fisica",
+      "title": "Academias de Natación y Clases Acuáticas en Lima",
+      "path": "/deporte-y-actividad-fisica/academias-de-natacion"
+    },
+    {
+      "slug": "academias-de-futbol",
+      "area_slug": "deporte-y-actividad-fisica",
+      "title": "Academias Formativas de Fútbol en Lima",
+      "path": "/deporte-y-actividad-fisica/academias-de-futbol"
+    },
+    {
+      "slug": "academias-de-artes-marciales",
+      "area_slug": "deporte-y-actividad-fisica",
+      "title": "Academias de Artes Marciales, Boxeo y Jiu-Jitsu en Lima",
+      "path": "/deporte-y-actividad-fisica/academias-de-artes-marciales"
+    },
+    {
+      "slug": "manicure-y-pedicure",
+      "area_slug": "belleza-y-cuidado-personal",
+      "title": "Salones de Manicure, Pedicure y Nail Art en Lima",
+      "path": "/belleza-y-cuidado-personal/manicure-y-pedicure"
+    },
+    {
+      "slug": "estudios-de-maquillaje",
+      "area_slug": "belleza-y-cuidado-personal",
+      "title": "Estudios de Maquillaje Profesional y Novias en Lima",
+      "path": "/belleza-y-cuidado-personal/estudios-de-maquillaje"
+    },
+    {
+      "slug": "centros-de-depilacion",
+      "area_slug": "belleza-y-cuidado-personal",
+      "title": "Centros de Depilación Láser y Cera en Lima",
+      "path": "/belleza-y-cuidado-personal/centros-de-depilacion"
+    },
+    {
+      "slug": "estudios-de-tatuajes",
+      "area_slug": "belleza-y-cuidado-personal",
+      "title": "Estudios de Tatuajes y Tattoo Artists en Lima",
+      "path": "/belleza-y-cuidado-personal/estudios-de-tatuajes"
+    },
+    {
+      "slug": "estudios-de-piercing",
+      "area_slug": "belleza-y-cuidado-personal",
+      "title": "Estudios de Piercing y Perforaciones Corporales en Lima",
+      "path": "/belleza-y-cuidado-personal/estudios-de-piercing"
+    }
+  ],
+  "content_sha256": "5180870eddc4d895f8bc0934bcc0b6f10b11cd59aaad17a3d9815f70413ca1d8"
+}
