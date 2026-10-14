@@ -6,12 +6,16 @@ import { Resultados } from '../pages/Resultados/Resultados.jsx';
 import { Auditoria } from '../pages/Auditoria/Auditoria.jsx';
 import { Admin } from '../pages/Admin/Admin.jsx';
 import { WhatsAppFloat } from '../components/WhatsAppFloat/WhatsAppFloat.jsx';
+import { Servicios } from '../pages/Servicios/Servicios.jsx';
+import { RouteMetadata } from '../components/RouteMetadata/RouteMetadata.jsx';
 
 export function AppRouter() {
   return (
     <BrowserRouter>
+      <RouteMetadata/>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/servicios" element={<Servicios />} />
         <Route path="/resultados" element={<Resultados />} />
         <Route path="/auditoria" element={<Auditoria />} />
         <Route path="/privacidad" element={<Privacidad />} /><Route path="/admin" element={<Admin />} />

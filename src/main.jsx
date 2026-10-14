@@ -1,11 +1,11 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { AppRouter } from './router/AppRouter.jsx';
-import './styles.css';
-import './admin.css';
+import './foundation.css';
 
 createRoot(document.getElementById('root')).render(<AppRouter />);
 
-import './marketing.css';
 import './brand-tokens.css';
-import './brand.css';
+import './identity.css';
+import './site.css';
+import './refinement.css';

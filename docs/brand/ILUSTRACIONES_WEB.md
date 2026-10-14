@@ -1,0 +1,13 @@
+# Ilustraciones editoriales v1
+
+Generadas con la herramienta integrada imagegen el 14 de octubre de 2026. Son representaciones conceptuales, no fotografías de clientes, instalaciones reales o capturas del producto.
+
+Archivos originales y WebP optimizados conservados en public/assets/images: ecosistema-editorial-master-v1.png, ecosistema-editorial-v1.webp, sectores-editorial-master-v1.png y sectores-editorial-v1.webp.
+
+## Prompt — ecosistema
+
+Use case: stylized-concept. Asset: original premium editorial illustration for Hazlo Crecer website hero, square 1408x1408. An art-directed physical miniature business ecosystem on warm ivory #F7F5EF backdrop: a sculptural looping deep forest green #176B45 ribbon connects three elegant architectural stations on rounded limestone plinths: a boutique storefront portal, an abstract conversation tile with one speech bubble shape, and an upright stack of cream cards with geometric ticks. One luminous lime #51ED7B detail tracing the connection, matte off-white ceramic objects, brushed forest-green metal, warm stone and small organic leaf detail, precise soft daylight, elegant realistic 3D product photography, refined tactile design, contemporary architectural editorial feeling. Isometric three-quarter view, strong dynamic diagonal composition with ribbon path through center; objects occupy central 80 percent, generous warm background, large enough details for mobile. No words, numbers, charts, logos, people, robots, neon glow, dark sci-fi, busy network or watermark. This is conceptual imagery about connected marketing, conversations and follow-up, not a screenshot.
+
+## Prompt — sectores
+
+Use case: stylized-concept. Asset: landscape 1536x1024 original premium editorial illustration for Hazlo Crecer sector library. A curated architectural miniature collection on warm ivory background #F7F5EF, refined tactile 3D product photography: four small elegant business facades arranged in a gently staggered row, a contemporary restaurant with olive-green awning and tiny round table, a calm clinic with arched glass entrance and no medical cross, an elegant real estate townhouse, a professional office with fluted glass and a potted plant. Warm travertine stone, ivory ceramic, deep forest-green #176B45 architectural details, restrained lime #51ED7B small accent; soft daylight with natural shadows; sophisticated model-making and exceptional architectural realism; comfortable negative space, objects clearly separated; no text, signs, logos, humans, robots, neon effects, stock photos, charts or watermark. Convey distinct businesses requiring distinct digital experiences, purely conceptual and not real client premises.

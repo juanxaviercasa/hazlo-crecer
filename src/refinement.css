@@ -1,0 +1,98 @@
+/* Final editorial pass: shared rhythm and readable supporting text. */
+:root {
+  --type-caption: .75rem;
+  --type-small: .875rem;
+  --type-body: 1rem;
+  --type-lead: 1.125rem;
+  --section-space: clamp(64px, 7vw, 112px);
+  --heading-tracking: -.035em;
+}
+.section { padding-block: var(--section-space); }
+.container { width: min(1240px, calc(100% - 80px)); }
+main { overflow-wrap: break-word; }
+h1,h2,h3 { font-weight: 500; }
+main p { line-height: 1.75; }
+.hero-copy h1 { font-size: clamp(54px, 5.8vw, 80px); letter-spacing: -.05em; line-height: 1.06; font-weight: 500; }
+.hero-copy > p, .page-intro p { font-size: var(--type-lead); line-height: 1.75; max-width: 54ch; }
+.hero-grid { gap: clamp(32px, 4vw, 64px); }
+.hero-art { box-shadow: none; }
+.hero-assurance { font-size: var(--type-caption); max-width: 52ch; }
+.hero-actions { gap: 16px; }
+.button { font-size: var(--type-small); border-radius: 7px; padding: 15px 22px; }
+.nav-links { font-size: var(--type-small); }
+.nav { min-height: 88px; }
+.brand small { font-size: 9px; letter-spacing: .08em; }
+.nav-cta { font-size: 13px; }
+.kicker { font-size: 11px; letter-spacing: .1em; }
+.art-overline { font-size: 10px; letter-spacing: .08em; }
+.art-caption, .sector-art > span { font-size: 11px; line-height: 1.5; }
+.principle-strip .container > span { font-size: 11px; line-height: 1.5; max-width: 27ch; }
+.principle-strip p { font-size: 15px; gap: 16px; }
+.section-heading h2, .ecosystem-grid h2, .sectors-feature h2 { letter-spacing: var(--heading-tracking); font-weight: 500; }
+.service-card { border-radius: 12px; padding: 32px 26px; }
+.service-card h3 { font-size: 24px; line-height: 1.2; max-width: none; letter-spacing: -.025em; }
+.service-card p, .methodology-grid p, .application-card p, .service-detail p, .check-list li { font-size: 15px; line-height: 1.75; }
+.card-link, .index-number, .journey-foot, .sector-tags span, .human-note, .human-note p { font-size: var(--type-caption); }
+.card-top { margin-bottom: 32px; }
+.journey-item h3 { font-size: 21px; }
+.journey-item p { font-size: var(--type-small); max-width: 35ch; }
+.journey-item > span { font-size: var(--type-caption); }
+.methodology-grid h3 { font-size: 24px; }
+.relationship-grid h2 { font-size: clamp(32px, 3.2vw, 44px); letter-spacing: var(--heading-tracking); }
+.relationship-card p { font-size: var(--type-small); }
+.relationship-card > span, .relationship-card .text-link { font-size: 13px; }
+.faq-list summary { font-size: 16px; line-height: 1.5; min-height: 72px; }
+.faq-list details p { font-size: 15px; max-width: 62ch; }
+.calculator-disclosure > summary { font-size: var(--type-small); min-height: 64px; }
+.final-cta p, .footer-grid > div > p, .footer-grid > div > a:not(.brand), .footer-location { font-size: var(--type-small); }
+.footer-grid h2, .footer-bottom p { font-size: var(--type-caption); }
+.footer-grid > div > a:not(.brand) { min-height: 44px; }
+.final-cta h2 { font-weight: 500; letter-spacing: var(--heading-tracking); }
+.page-intro h1 { letter-spacing: -.04em; max-width: 20ch; }
+.catalog-feature p, .application-banner p { max-width: 48ch; }
+.catalog-toolbar label, .category-link, .area-card > div, .search-control input, .search-status { font-size: var(--type-small); }
+.area-card h2 { font-size: 25px; line-height: 1.25; }
+.application-flow, .editorial-note, .deliverables p { font-size: var(--type-caption); }
+.audit-copy > p { font-size: var(--type-body); }
+.audit-copy h1 { font-weight: 500; letter-spacing: -.04em; }
+.audit-note p, .audit-form-wrap p { font-size: var(--type-small); line-height: 1.65; }
+.audit-form-wrap label { font-size: var(--type-small); }
+.audit-form-wrap input, .audit-form-wrap select, .audit-form-wrap textarea { font-size: 16px; min-height: 48px; }
+.audit-form-wrap input[type=checkbox] { min-height: 0; width: 20px; height: 20px; }
+.audit-copy > .text-link { font-size: var(--type-small); }
+.audit-form-wrap .marketing-panel { padding: 36px; }
+.prose p { font-size: 16px; line-height: 1.8; }
+.whatsapp-float { min-height: 48px; font-size: 13px; }
+.section [id], .service-detail { scroll-margin-top: 110px; }
+@media(max-width:1100px) {
+  .service-card h3 { max-width: 25ch; }
+  .principle-strip .container > span { max-width: none; }
+}
+@media(max-width:767px) {
+  .container { width: calc(100% - 40px); }
+  .nav { min-height: 80px; }
+  .hero-copy h1 { font-size: clamp(48px, 10.5vw, 68px); }
+  .hero-copy > p, .page-intro p { font-size: 17px; }
+  .hero-art { max-width: 560px; }
+  .art-overline { font-size: 9px; }
+  .section-heading h2 { font-size: clamp(32px, 7vw, 42px); }
+  .page-intro h1 { font-size: clamp(36px, 8vw, 52px); }
+  .hero-actions { gap: 16px; }
+  .brand small { display: none; }
+  .brand { font-size: 24px; }
+  .audit-form-wrap .marketing-panel { padding: 24px; }
+  .service-card { padding: 28px 24px; }
+  .footer-bottom { padding-bottom: 60px; }
+}
+@media(max-width:480px) {
+  .hero-copy h1 { font-size: clamp(42px, 11vw, 54px); }
+  .hero-copy > p { font-size: 16px; }
+  .art-overline { position: static; padding: 18px 16px 0; font-size: 9px; }
+  .kicker { font-size: 10px; }
+  .methodology-grid { grid-template-columns: 1fr; }
+  .methodology-grid li { display: grid; grid-template-columns: 42px 1fr; column-gap: 16px; }
+  .methodology-grid h3 { margin: 2px 0 12px; }
+  .methodology-grid p { grid-column: 2; }
+  .step-number { font-size: 26px; }
+  .brand { font-size: 22px; }
+}

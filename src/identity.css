@@ -1,0 +1,19 @@
+/* Semantic tokens only. Component appearance belongs to site.css. */
+:root {
+  color-scheme: light;
+  --bg-main: var(--brand-background);
+  --bg-subtle: #eef2e9;
+  --panel: var(--brand-surface);
+  --line: var(--brand-border);
+  --green: var(--brand-primary);
+  --green-hover: var(--brand-primary-hover);
+  --text: var(--brand-text);
+  --text-secondary: var(--brand-muted);
+  --muted: var(--brand-muted);
+}
+body { background: var(--bg-main); color: var(--text); font-size: 16px; }
+.button { color: var(--brand-on-primary); min-height: 48px; }
+::selection { background: var(--brand-accent); color: var(--text); }
+.marketing-panel input[type=checkbox] { accent-color: var(--brand-primary); }
+.marketing-error { color: #a52a32; }
+.marketing-panel p a { text-decoration: underline; text-underline-offset: 4px; color: var(--brand-primary); }

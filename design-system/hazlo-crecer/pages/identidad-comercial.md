@@ -6,5 +6,6 @@ La conservación de los colores anteriores indicada en MASTER.md se sustituye, p
 
 Base clara cálida, verde profundo para controles y textos destacados, verde eléctrico reservado al logo y acentos. Conservar las fuentes existentes y el stack React/Vite con CSS propio.
 Implementación: `src/brand-tokens.css` generado y `src/brand.css`. Estrategia: `docs/brand/ESTRATEGIA_IDENTIDAD.md`.
+La nueva web local usa `identity.css` para tokens semánticos, `site.css` para composición y `refinement.css` para escala tipográfica y ritmo. La importación de brand.css queda retirada para evitar competencia entre estilos. Conservar Inter/Space Grotesk, lectura principal de 16 px y apoyo de 12/14 px. Registro: docs/brand/AUDITORIA_WEB.md.
 
 Build validado. La verificación visual en navegador, teclado, móvil y zoom queda pendiente por interrupción del control del navegador; no se declara completada ni se certifica accesibilidad.
