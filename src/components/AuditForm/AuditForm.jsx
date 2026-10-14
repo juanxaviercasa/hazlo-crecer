@@ -1,10 +1,10 @@
-import catalog from '../../data/directory-offers.json';
+import {useCatalog} from '../../services/useCatalog.js';
 import {useRef,useState} from 'react';
 import {Link,useSearchParams} from 'react-router-dom';
 import {createLead} from '../../services/core.js';
 const key='hazlo_audit_attempt_v2',draftKey='hazlo_audit_draft_v1';
 function read(){try{return JSON.parse(localStorage.getItem(key)||'null');}catch{return null;}}
-export function AuditForm(){
+export function AuditForm(){const catalog=useCatalog();
  const [query]=useSearchParams(),category=catalog.categories.find(c=>c.slug===query.get('categoria'));
  const [attempt,setAttempt]=useState(read),[busy,setBusy]=useState(false),[error,setError]=useState('');const summary=useRef(null);
  const report=message=>{setError(message);requestAnimationFrame(()=>summary.current?.focus());};
