@@ -1,3 +1,4 @@
+import {WebAgent} from '../components/WebAgent/WebAgent.jsx';
 import { Offers, DentalAlias } from '../pages/Offers/Offers.jsx';
 import { Privacidad } from '../pages/Privacidad/Privacidad.jsx';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
@@ -23,6 +24,7 @@ export function AppRouter() {
         <Route path="/sectores" element={<Offers />} /><Route path="/salud/odontologia" element={<DentalAlias />} /><Route path="/:area/:category" element={<Offers />} /><Route path="/:area" element={<Offers />} /><Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <WhatsAppFloat />
+      <WebAgent />
     </BrowserRouter>
   );
 }
