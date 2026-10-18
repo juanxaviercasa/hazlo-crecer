@@ -3,10 +3,10 @@
   "brand_id": "hazlo-crecer",
   "name": "Hazlo Crecer",
   "website": "https://hazlocrecer.com",
-  "asset_version": "1",
-  "identity_version": "1.2",
-  "logo_status": "approved_for_use_v1",
-  "updated_at": "2026-10-14",
+  "asset_version": "2",
+  "identity_version": "2.0",
+  "logo_status": "approved_for_use_v2",
+  "updated_at": "2026-10-18",
   "positioning": "Marketing, ecosistemas digitales, atención y seguimiento medible con automatización dirigida por personas.",
   "palette": {
     "primary": "#176b45",
@@ -17,20 +17,52 @@
     "text": "#17251d",
     "muted": "#526458",
     "border": "#c6d2c8",
-    "logo_background": "#060907",
+    "logo_background": "#ffffff",
     "on_primary": "#ffffff"
   },
-  "typography": {"body": "Inter", "display": "Space Grotesk"},
-  "voice": {"tone": "Claro, cercano, profesional y concreto.", "message": "Conecta tu marketing, atención y seguimiento.", "avoid": ["Promesas de ventas garantizadas", "Afirmaciones de resultados sin evidencia", "Jerga técnica sin utilidad para el cliente"]},
-  "ecosystem": {"architecture": "related_independent_brands", "catalog_source": "Todo Lima", "shared": ["Claridad de información", "Jerarquía y legibilidad", "Trazabilidad de contenido y recursos"], "other_brand_palettes": "No asignadas por este manifiesto"},
-  "assets": {
-    "master": "/assets/brand/hazlo-crecer-master-v1.png",
-    "whatsapp_profile": "/assets/brand/hazlo-crecer-whatsapp-v1.png",
-    "web_icon": "/assets/brand/hazlo-crecer-icon-v1.png",
-    "favicon": "/assets/brand/hazlo-crecer-favicon-v1.png",
-    "apple_touch_icon": "/assets/brand/hazlo-crecer-apple-touch-v1.png"
+  "typography": {
+    "body": "Inter",
+    "display": "Space Grotesk"
   },
-  "whatsapp_profile": {"width": 1024, "height": 1024, "format": "png", "background": "opaque", "crop": "centered_circle"},
-  "generation_prompt": "docs/brand/PROMPT_MAESTRO.md",
-  "rules": ["Reutilizar el logo v1 aprobado para uso; no regenerarlo por campaña.", "Usar verde profundo en textos y botones sobre fondos claros; reservar el verde eléctrico para acentos y el logo.", "Mantener la identidad separada de Todo Lima, AVDM y otras marcas.", "No añadir textos pequeños al avatar ni deformar el símbolo.", "Toda evolución del logo requiere una nueva versión explícita; conservar los archivos anteriores."]
+  "voice": {
+    "tone": "Claro, cercano, profesional y concreto.",
+    "message": "Conecta tu marketing, atención y seguimiento.",
+    "avoid": [
+      "Promesas de ventas garantizadas",
+      "Afirmaciones de resultados sin evidencia",
+      "Jerga técnica sin utilidad para el cliente"
+    ]
+  },
+  "ecosystem": {
+    "architecture": "related_independent_brands",
+    "catalog_source": "Todo Lima",
+    "shared": [
+      "Claridad de información",
+      "Jerarquía y legibilidad",
+      "Trazabilidad de contenido y recursos"
+    ],
+    "other_brand_palettes": "No asignadas por este manifiesto"
+  },
+  "assets": {
+    "master": "/assets/brand/hazlo-crecer-logo-v2.png",
+    "whatsapp_profile": "/assets/brand/hazlo-crecer-logo-v2.png",
+    "web_icon": "/assets/brand/hazlo-crecer-logo-v2.png",
+    "favicon": "/assets/brand/hazlo-crecer-logo-v2.png",
+    "apple_touch_icon": "/assets/brand/hazlo-crecer-logo-v2.png"
+  },
+  "whatsapp_profile": {
+    "width": 1254,
+    "height": 1254,
+    "format": "png",
+    "background": "opaque",
+    "crop": "centered_circle"
+  },
+  "generation_prompt": "docs/brand/LOGO_V2_20261018.md",
+  "rules": [
+    "Reutilizar el logo v2: flecha y hoja simplificadas, fondo blanco y margen para recorte circular. Conservar v1 como histórico.",
+    "Usar verde profundo en textos y botones sobre fondos claros; reservar el verde eléctrico para acentos y el logo.",
+    "Mantener la identidad separada de Todo Lima, AVDM y otras marcas.",
+    "No añadir textos pequeños al avatar ni deformar el símbolo.",
+    "Toda evolución del logo requiere una nueva versión explícita; conservar los archivos anteriores."
+  ]
 }

@@ -10,7 +10,7 @@ const roles = {
   muted: 'brand-muted', border: 'brand-border', logo_background: 'brand-logo-background',
   on_primary: 'brand-on-primary'
 };
-if (brand.brand_id !== 'hazlo-crecer' || brand.logo_status !== 'approved_for_use_v1') {
+if (brand.brand_id !== 'hazlo-crecer' || brand.logo_status !== 'approved_for_use_v2') {
   throw new Error('Unexpected brand identity; review before publishing.');
 }
 for (const role of Object.keys(roles)) {
