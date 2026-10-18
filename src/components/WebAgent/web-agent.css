@@ -8,3 +8,4 @@
 @media(max-width:480px){.hc-web-agent{right:16px;bottom:88px}.hc-web-agent section{max-height:calc(100dvh - 170px);border-radius:18px}.hc-web-agent header{padding:18px}.hc-chat-body{padding:18px}.hc-web-agent h2{font-size:21px}.hc-chat-welcome h3{font-size:22px}.hc-chat-turns{max-height:250px}}
 @media(prefers-reduced-motion:no-preference){.hc-web-agent button,.hc-web-agent nav a{transition:background-color .15s,box-shadow .15s}.hc-chat-suggestions button:hover,.hc-chat-audit:hover{box-shadow:0 0 0 1px var(--brand-primary)}.hc-chat-trigger:hover,.hc-chat-compose button:not(:disabled):hover{background:var(--brand-primary-hover,#115235)}}
 .hc-chat-turns:has(.hc-chat-welcome){max-height:none;overflow:visible}
+.hc-web-agent header{position:sticky;top:0;z-index:2}
