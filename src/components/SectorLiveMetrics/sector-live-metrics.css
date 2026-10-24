@@ -1,0 +1,185 @@
+/* Sector Live Metrics Dashboard Card */
+.sector-metrics-panel {
+  background: #0f1c16;
+  border: 1px solid rgba(81, 237, 123, 0.25);
+  border-radius: 20px;
+  padding: 26px 22px;
+  color: #e9edef;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+  width: 100%;
+}
+
+.metrics-panel-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.metrics-live-indicator {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #51ed7b;
+}
+
+.live-pulsing-dot {
+  width: 7px;
+  height: 7px;
+  background: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #25d366;
+  animation: metricsPulse 1.6s infinite;
+}
+
+@keyframes metricsPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.85);
+  }
+}
+
+.metrics-badge-sector {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #aebac1;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.metrics-headline h4 {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0 0 4px;
+  font-weight: 700;
+}
+
+.metrics-headline p {
+  font-size: 12.5px !important;
+  color: #8696a0 !important;
+  margin: 0 0 18px !important;
+}
+
+.metrics-kpi-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.metrics-kpi-box {
+  background: #14231c;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: center;
+}
+
+.metrics-kpi-box.win {
+  border-color: rgba(81, 237, 123, 0.3);
+  background: rgba(37, 211, 102, 0.08);
+}
+
+.kpi-num {
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.metrics-kpi-box.win .kpi-num {
+  color: #51ed7b;
+}
+
+.kpi-label {
+  font-size: 10px;
+  color: #8696a0;
+  line-height: 1.3;
+}
+
+.metrics-treatment-bars {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.treatment-title {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #aebac1;
+  margin-bottom: 10px;
+}
+
+.treatment-item {
+  margin-bottom: 10px;
+}
+
+.treatment-item:last-child {
+  margin-bottom: 0;
+}
+
+.treatment-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11.5px;
+  margin-bottom: 4px;
+}
+
+.t-name {
+  color: #e9edef;
+  font-weight: 500;
+}
+
+.t-val {
+  color: #51ed7b;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.treatment-track {
+  width: 100%;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.treatment-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #176b45, #51ed7b);
+  border-radius: 100px;
+}
+
+.metrics-panel-footer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10.5px;
+  color: #a9edbc;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-sync-icon {
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .metrics-kpi-row {
+    grid-template-columns: 1fr;
+  }
+}

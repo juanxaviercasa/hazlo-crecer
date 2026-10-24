@@ -1,0 +1,165 @@
+/* Blueprint & Casos de Estudio Styles */
+.blueprints-section {
+  padding-block: var(--section-space, 80px);
+}
+
+.blueprints-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.blueprint-card {
+  background: white;
+  border: 1px solid var(--line, #c6d2c8);
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: 0 12px 32px rgba(23, 37, 29, 0.05);
+}
+
+.blueprint-header {
+  border-bottom: 1px solid var(--line, #c6d2c8);
+  padding-bottom: 24px;
+  margin-bottom: 28px;
+}
+
+.blueprint-tag {
+  display: inline-block;
+  background: #eef6f0;
+  color: var(--brand-primary, #176b45);
+  border: 1px solid #c2e2ce;
+  border-radius: 100px;
+  padding: 5px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.blueprint-header h2 {
+  font-size: clamp(24px, 2.5vw, 32px);
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  color: var(--brand-text, #17251d);
+  margin: 0;
+}
+
+.blueprint-body {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 32px;
+  align-items: stretch;
+}
+
+.blueprint-text-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.blueprint-block {
+  background: #fafaf8;
+  border: 1px solid var(--line, #c6d2c8);
+  border-radius: 16px;
+  padding: 20px 24px;
+}
+
+.blueprint-block strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: var(--brand-text, #17251d);
+}
+
+.blueprint-block p {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--brand-muted, #526458);
+  margin: 0;
+}
+
+.blueprint-metrics-col {
+  background: linear-gradient(180deg, #102d22 0%, #0a1b14 100%);
+  border: 1px solid #254c38;
+  border-radius: 18px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.metrics-eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #a9edbc;
+  margin-bottom: 20px;
+}
+
+.metrics-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.metric-box {
+  border-top: 1px solid #254c38;
+  padding-top: 14px;
+}
+
+.metric-box:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.metric-val {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  color: #51ed7b;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.metric-lbl {
+  display: block;
+  font-size: 13.5px;
+  color: #ffffff;
+  margin: 4px 0 2px;
+}
+
+.metric-sub {
+  display: block;
+  font-size: 12px;
+  color: #a9edbc;
+}
+
+.blueprint-footer {
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line, #c6d2c8);
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 900px) {
+  .blueprint-body {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .blueprint-card {
+    padding: 22px;
+  }
+  .blueprint-footer {
+    justify-content: stretch;
+  }
+  .blueprint-footer .button {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}

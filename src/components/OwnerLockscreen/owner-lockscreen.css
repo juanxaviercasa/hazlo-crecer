@@ -1,0 +1,193 @@
+/* Owner Lockscreen Notifications Widget */
+.owner-lockscreen-section {
+  padding-block: var(--section-space, 80px);
+  background: var(--brand-background, #f7f5ef);
+}
+
+.owner-lockscreen-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.owner-lockscreen-copy h2 {
+  font-size: clamp(28px, 3.4vw, 44px);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+  color: var(--brand-text, #17251d);
+  margin: 16px 0 20px;
+}
+
+.owner-lockscreen-copy p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--brand-muted, #526458);
+  margin-bottom: 24px;
+}
+
+.lockscreen-benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.lockscreen-benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14.5px;
+  color: var(--brand-text, #17251d);
+  line-height: 1.5;
+}
+
+.lockscreen-benefits-list svg {
+  width: 20px;
+  height: 20px;
+  color: var(--brand-primary, #176b45);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Phone Frame */
+.lockscreen-phone-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.lockscreen-phone {
+  width: 100%;
+  max-width: 380px;
+  background: #0d161a;
+  border: 10px solid #1c272e;
+  border-radius: 40px;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: white;
+  padding-bottom: 24px;
+}
+
+.lockscreen-time-area {
+  padding: 36px 20px 24px;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(23, 107, 69, 0.25) 0%, transparent 100%);
+}
+
+.lockscreen-date {
+  font-size: 13px;
+  font-weight: 500;
+  color: #aebac1;
+  text-transform: capitalize;
+}
+
+.lockscreen-clock {
+  font-size: 54px;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  margin: 4px 0 0;
+  color: #ffffff;
+}
+
+.lockscreen-stream {
+  padding: 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual notification cards */
+.lock-notif-card {
+  background: rgba(30, 42, 50, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 12px 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.lock-notif-card:hover {
+  transform: scale(1.02);
+}
+
+.lock-notif-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.lock-notif-app {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #aebac1;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.lock-notif-app-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.icon-wa {
+  background: #25d366;
+  color: white;
+}
+
+.icon-pay {
+  background: #00d4b2;
+  color: #0b141a;
+}
+
+.icon-stars {
+  background: #fbbc04;
+  color: #0b141a;
+}
+
+.icon-cal {
+  background: #4285f4;
+  color: white;
+}
+
+.lock-notif-time {
+  font-size: 10px;
+  color: #8696a0;
+}
+
+.lock-notif-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.lock-notif-body {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #d1d7db;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .owner-lockscreen-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}

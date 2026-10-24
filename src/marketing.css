@@ -1,1 +1,357 @@
 .marketing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:24px;margin:28px 0}.marketing-panel{padding:28px}.marketing-panel label{display:block;margin:18px 0}.marketing-panel input,.marketing-panel select{width:100%;padding:14px;background:#060907;color:#f0f7f2;border:1px solid #788d7e;border-radius:8px;font:inherit}.marketing-panel input[type=checkbox]{width:22px;height:22px;margin-right:10px;vertical-align:middle}.marketing-panel .button{margin-top:20px}.marketing-error{color:#ffbcb5}.marketing-panel :focus-visible,a:focus-visible,button:focus-visible{outline:3px solid #51ed7b;outline-offset:4px}.marketing-panel output{display:block;font-size:1.5rem;margin:24px 0}main p{line-height:1.7}main h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.15;overflow-wrap:anywhere}.marketing-panel{overflow-wrap:anywhere}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}@media(max-width:767px){.nav-actions>.button{display:none}.nav{gap:12px}.marketing-panel a{display:inline-block;min-height:44px;padding:8px 0}}
+
+
+/* ROI Calculator Styles - Aterrizado a Lima */
+.roi-calculator-section {
+  padding-block: 64px;
+}
+.roi-calculator-card {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 32px;
+  background: var(--surface, #141f19);
+  border: 1px solid var(--line, #24352a);
+  border-radius: 24px;
+  padding: 36px;
+  margin-top: 36px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+.roi-inputs-col {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.roi-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.roi-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.roi-label-row label {
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--text-primary, #f0f7f2);
+}
+.roi-val-badge {
+  background: var(--brand-background, #102d22);
+  color: #a9edbc;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 100px;
+  border: 1px solid #254c38;
+}
+.roi-slider {
+  width: 100%;
+  accent-color: #51ed7b;
+  cursor: pointer;
+  height: 8px;
+  border-radius: 4px;
+  background: #1c2720;
+}
+.roi-range-markers {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-secondary, #9eb3a4);
+}
+.roi-number-input {
+  width: 100%;
+  padding: 14px 16px;
+  background: #090e0b;
+  color: #f0f7f2;
+  border: 1px solid var(--line, #24352a);
+  border-radius: 12px;
+  font-size: 16px;
+}
+.roi-number-input:focus {
+  outline: 2px solid #51ed7b;
+  border-color: #51ed7b;
+}
+.roi-helper-text {
+  font-size: 12px;
+  color: var(--text-secondary, #9eb3a4);
+  margin: 0;
+}
+.roi-time-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 4px;
+}
+.roi-time-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #090e0b;
+  border: 1px solid var(--line, #24352a);
+  color: var(--text-primary, #f0f7f2);
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+.roi-time-pill strong {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.roi-time-pill span {
+  font-size: 11px;
+  color: var(--text-secondary, #9eb3a4);
+}
+.roi-time-pill.active {
+  background: #102d22;
+  border-color: #51ed7b;
+  color: #fff;
+}
+.roi-time-pill.active span {
+  color: #a9edbc;
+}
+.roi-results-col {
+  display: flex;
+}
+.roi-results-box {
+  width: 100%;
+  background: linear-gradient(180deg, #102d22 0%, #0a1b14 100%);
+  border: 1px solid #254c38;
+  border-radius: 20px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.roi-alert-badge {
+  display: inline-block;
+  align-self: flex-start;
+  background: rgba(255, 87, 87, 0.15);
+  color: #ff8585;
+  border: 1px solid rgba(255, 87, 87, 0.35);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 100px;
+}
+.roi-metric-main {
+  margin: 20px 0;
+}
+.roi-metric-sub {
+  display: block;
+  font-size: 13px;
+  color: #a9edbc;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.roi-metric-number {
+  display: block;
+  font-size: clamp(32px, 3.2vw, 44px);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+.roi-metric-number small {
+  font-size: 18px;
+  font-weight: 400;
+  color: #a9edbc;
+}
+.roi-metric-context {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #d8e6dd;
+}
+.roi-annual-pill {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid #254c38;
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+.roi-annual-pill span {
+  font-size: 12px;
+  color: #a9edbc;
+}
+.roi-annual-pill strong {
+  font-size: 18px;
+  color: #51ed7b;
+}
+.roi-cta-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.roi-btn-main {
+  width: 100%;
+  justify-content: center;
+  padding: 16px 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.roi-fine-print {
+  font-size: 11px;
+  color: #8fa898;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+}
+@media (max-width: 860px) {
+  .roi-calculator-card {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+  .roi-time-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Blueprints & Resultados Styles */
+.blueprints-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.blueprint-card {
+  background: var(--surface, #141f19);
+  border: 1px solid var(--line, #24352a);
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.2);
+}
+.blueprint-header {
+  border-bottom: 1px solid var(--line, #24352a);
+  padding-bottom: 24px;
+  margin-bottom: 28px;
+}
+.blueprint-tag {
+  display: inline-block;
+  background: #102d22;
+  color: #a9edbc;
+  border: 1px solid #254c38;
+  border-radius: 100px;
+  padding: 4px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.blueprint-header h2 {
+  font-size: clamp(24px, 2.5vw, 32px);
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  color: var(--text-primary, #f0f7f2);
+  margin: 0;
+}
+.blueprint-body {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 36px;
+  align-items: start;
+}
+.blueprint-text-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.blueprint-block {
+  background: #090e0b;
+  border: 1px solid var(--line, #24352a);
+  border-radius: 16px;
+  padding: 20px 24px;
+}
+.blueprint-block strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: var(--text-primary, #f0f7f2);
+}
+.blueprint-block p {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-secondary, #9eb3a4);
+  margin: 0;
+}
+.blueprint-metrics-col {
+  background: linear-gradient(180deg, #102d22 0%, #0a1b14 100%);
+  border: 1px solid #254c38;
+  border-radius: 18px;
+  padding: 24px;
+}
+.metrics-eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #a9edbc;
+  margin-bottom: 16px;
+}
+.metrics-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.metric-box {
+  border-top: 1px solid #254c38;
+  padding-top: 12px;
+}
+.metric-box:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+.metric-val {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #51ed7b;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.metric-lbl {
+  display: block;
+  font-size: 13px;
+  color: #f0f7f2;
+  margin: 4px 0 2px;
+}
+.metric-sub {
+  display: block;
+  font-size: 11px;
+  color: #8fa898;
+}
+.blueprint-footer {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line, #24352a);
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 900px) {
+  .blueprint-body {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .blueprint-card {
+    padding: 24px;
+  }
+  .blueprint-footer {
+    justify-content: stretch;
+  }
+  .blueprint-footer .button {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}

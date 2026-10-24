@@ -9,3 +9,6 @@ import './brand-tokens.css';
 import './identity.css';
 import './site.css';
 import './refinement.css';
+import './legal.css';
+
+import './premium.css';

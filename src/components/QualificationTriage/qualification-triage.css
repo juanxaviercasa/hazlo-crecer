@@ -1,0 +1,332 @@
+/* Qualification Triage - Automated Business Admission Funnel */
+.triage-card {
+  background: #ffffff;
+  border: 1px solid var(--line, #e2e8f0);
+  border-radius: 20px;
+  padding: 32px 28px;
+  box-shadow: 0 15px 40px rgba(23, 37, 29, 0.06);
+  font-family: inherit;
+  width: 100%;
+}
+
+.triage-steps-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.triage-step-dot {
+  font-size: 12px;
+  font-weight: 600;
+  color: #94a3b8;
+  transition: all 0.2s;
+}
+
+.triage-step-dot.active {
+  color: #176b45;
+  font-weight: 700;
+}
+
+.triage-step-line {
+  flex: 1;
+  height: 2px;
+  background: #e2e8f0;
+  margin: 0 10px;
+}
+
+.triage-badge-top {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #176b45;
+  background: #e8f5ee;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.triage-form-step h3 {
+  font-size: 20px;
+  color: #0f172a;
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
+.triage-sub {
+  font-size: 13.5px !important;
+  color: #64748b !important;
+  line-height: 1.5 !important;
+  margin: 0 0 20px !important;
+}
+
+.triage-label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 16px;
+}
+
+.triage-input,
+.triage-select {
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #0f172a;
+  background: #f8fafc;
+  transition: border-color 0.2s;
+}
+
+.triage-input:focus,
+.triage-select:focus {
+  outline: none;
+  border-color: #176b45;
+  background: #ffffff;
+}
+
+.triage-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.triage-pill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.triage-pill-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: all 0.2s;
+}
+
+.triage-pill-card strong {
+  font-size: 13.5px;
+  color: #0f172a;
+}
+
+.triage-pill-card span {
+  font-size: 11px;
+  color: #64748b;
+  line-height: 1.35;
+}
+
+.triage-pill-card:hover {
+  border-color: #176b45;
+  background: #ffffff;
+}
+
+.triage-pill-card.active {
+  border-color: #176b45;
+  background: #eef8f2;
+}
+
+.triage-pill-card.active strong {
+  color: #176b45;
+}
+
+.triage-actions-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  gap: 14px;
+}
+
+.triage-btn-back {
+  background: transparent;
+  border: none;
+  font-size: 13px;
+  color: #64748b;
+  cursor: pointer;
+  padding: 8px 12px;
+  font-weight: 500;
+}
+
+.triage-btn-back:hover {
+  color: #0f172a;
+}
+
+.triage-btn-next,
+.triage-btn-submit {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 14px;
+  padding: 14px;
+  text-align: center;
+  justify-content: center;
+}
+
+.triage-actions-row .triage-btn-next {
+  margin-top: 0;
+  width: auto;
+}
+
+/* RESULTS */
+.triage-result-disqualified {
+  text-align: center;
+  padding: 12px 6px;
+}
+
+.triage-result-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.triage-result-badge-red {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #b91c1c;
+  background: #fee2e2;
+  padding: 4px 12px;
+  border-radius: 100px;
+  margin-bottom: 12px;
+}
+
+.triage-advice-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 18px 0;
+  text-align: left;
+}
+
+.triage-advice-box strong {
+  display: block;
+  font-size: 13px;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.triage-advice-box p {
+  font-size: 12.5px !important;
+  color: #475569 !important;
+  line-height: 1.5 !important;
+  margin: 0 !important;
+}
+
+.triage-btn-restart {
+  background: transparent;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 12px;
+  color: #64748b;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+/* QUALIFIED RESULT */
+.triage-result-qualified {
+  text-align: left;
+}
+
+.triage-result-badge-green {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #15803d;
+  background: #dcfce7;
+  padding: 4px 12px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.triage-qualified-lead {
+  font-size: 14px !important;
+  color: #334155 !important;
+  margin-bottom: 16px !important;
+}
+
+.triage-kpi-highlight {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  background: #0f1c16;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.triage-kpi-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.triage-kpi-label {
+  font-size: 11px;
+  color: #aebac1;
+}
+
+.triage-kpi-val {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f87171;
+}
+
+.triage-kpi-val.green {
+  color: #51ed7b;
+}
+
+.triage-form-instruction {
+  font-size: 13px !important;
+  color: #475569 !important;
+  margin-bottom: 12px !important;
+}
+
+.triage-security-note {
+  display: block;
+  font-size: 11px;
+  color: #64748b;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.triage-confirmed {
+  text-align: center;
+  padding: 24px 10px;
+}
+
+.triage-confirmed p {
+  max-width: 440px;
+  margin: 12px auto 20px !important;
+  color: #475569 !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+}
+
+@media (max-width: 600px) {
+  .triage-card {
+    padding: 20px 16px;
+  }
+  .triage-row {
+    grid-template-columns: 1fr;
+  }
+  .triage-pill-grid {
+    grid-template-columns: 1fr;
+  }
+  .triage-kpi-highlight {
+    grid-template-columns: 1fr;
+  }
+}

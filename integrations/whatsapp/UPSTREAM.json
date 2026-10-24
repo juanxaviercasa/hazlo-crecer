@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-14",
+  "chatwoot": {"repository": "https://github.com/chatwoot/chatwoot", "commit": "a9edf195736d0fab0f6f6468b19347e849a95cf6", "downloaded": true, "runtime_started": false},
+  "evolution": {"repository": "https://github.com/evolution-foundation/evolution-api", "commit": "fa09d37892cdbb1d65a250155d293d92230c5b30", "downloaded": true, "runtime_started": false},
+  "mode": "simulation",
+  "paid_api_enabled": false,
+  "outbound_enabled": false,
+  "blocker": "Chatwoot administrator, inbox and test channel onboarding pending",
+  "oracle_runtime": {"directory": "/home/ubuntu/hazlo-whatsapp-pilot", "compose_project": "hazlo-whatsapp-pilot", "chatwoot_http": 302, "evolution_http": 200, "databases_healthy": true, "whatsapp_instance_created": false, "checked_at": "2026-10-14"}
+}

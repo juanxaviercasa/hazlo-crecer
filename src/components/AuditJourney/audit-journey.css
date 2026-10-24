@@ -1,15 +1,177 @@
-.audit-journey{background:var(--panel)}
-.audit-journey h2,.owned-pilot h2{max-width:24ch;text-wrap:balance;font-size:clamp(32px,3.8vw,48px);line-height:1.12;letter-spacing:-.035em;margin:16px 0 24px}
-.audit-journey-intro{max-width:64ch;color:var(--text-secondary);line-height:1.7}
-.audit-journey-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:36px 0}
-.audit-journey-cards article{border-top:1px solid var(--line);padding-top:24px;min-width:0}
-.audit-journey-cards h3,.owned-pilot-note h3,.audit-journey-next h3{font-size:1.25rem;line-height:1.4;margin:16px 0 12px}
-.audit-journey-cards p,.owned-pilot p,.audit-journey-next p,.audit-journey-boundary{line-height:1.7;color:var(--text-secondary)}
-.audit-journey-next{display:flex;align-items:center;gap:32px;border:1px solid var(--line);border-radius:16px;padding:28px}
-.audit-journey-next>div{flex:1;min-width:0}.audit-journey-next .button{flex-shrink:0;text-align:center}
-.audit-journey-boundary{max-width:80ch;margin-top:20px}
-.owned-pilot-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:start}
-.owned-pilot-note{border-left:3px solid var(--green);padding-left:28px}
-.audit-journey [id],.owned-pilot [id]{scroll-margin-top:110px}
-@media(max-width:900px){.audit-journey-cards{grid-template-columns:1fr;gap:16px}.audit-journey-next{align-items:stretch;flex-direction:column;padding:24px}.owned-pilot-grid{grid-template-columns:1fr;gap:28px}.audit-journey-next .button{align-self:flex-start}}
-@media(max-width:420px){.audit-journey-next .button{width:100%;white-space:normal}.owned-pilot-note{padding-left:20px}}
+.audit-journey {
+  background: var(--brand-surface, #ffffff);
+  border-block: 1px solid var(--line, #c6d2c8);
+}
+
+.audit-journey h2,
+.owned-pilot h2 {
+  max-width: 26ch;
+  text-wrap: balance;
+  font-size: clamp(30px, 3.5vw, 46px);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+  margin: 16px 0 20px;
+  color: var(--brand-text, #17251d);
+}
+
+.audit-journey-intro {
+  max-width: 64ch;
+  color: var(--brand-muted, #526458);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.audit-journey-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.audit-journey-cards article {
+  background: #fbfbf9;
+  border: 1px solid var(--line, #c6d2c8);
+  border-radius: 18px;
+  padding: 32px 28px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.audit-journey-cards article:hover {
+  transform: translateY(-3px);
+  border-color: var(--brand-primary, #176b45);
+}
+
+.audit-journey-cards article .kicker {
+  display: inline-block;
+  align-self: flex-start;
+  background: #eef6f0;
+  color: var(--brand-primary, #176b45);
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.audit-journey-cards h3 {
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 12px;
+  color: var(--brand-text, #17251d);
+}
+
+.audit-journey-cards p {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--brand-muted, #526458);
+  margin: 0;
+}
+
+.audit-journey-next {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  background: #f4faf6;
+  border: 1px solid #c2e2ce;
+  border-radius: 18px;
+  padding: 28px 32px;
+}
+
+.audit-journey-next h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: var(--brand-primary, #176b45);
+}
+
+.audit-journey-next p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--brand-muted, #526458);
+  margin: 0;
+}
+
+.audit-journey-next .button {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.audit-journey-boundary {
+  max-width: 80ch;
+  margin-top: 24px;
+  font-size: 12.5px;
+  color: var(--brand-muted, #526458);
+  line-height: 1.6;
+}
+
+/* Owned pilot / Compromiso section */
+.owned-pilot {
+  background: var(--brand-background, #f7f5ef);
+  padding-block: var(--section-space, 80px);
+}
+
+.owned-pilot-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.owned-pilot p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--brand-muted, #526458);
+}
+
+.owned-pilot-note {
+  background: white;
+  border: 1px solid var(--line, #c6d2c8);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 8px 24px rgba(23, 37, 29, 0.04);
+}
+
+.owned-pilot-note h3 {
+  font-size: 19px;
+  margin-bottom: 20px;
+  color: var(--brand-primary, #176b45);
+  border-bottom: 1px solid var(--line, #c6d2c8);
+  padding-bottom: 12px;
+}
+
+.owned-pilot-note p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--brand-text, #17251d);
+  margin-bottom: 14px;
+}
+
+.owned-pilot-note p:last-child {
+  margin-bottom: 0;
+}
+
+.owned-pilot-note strong {
+  color: var(--brand-primary, #176b45);
+}
+
+@media(max-width:900px) {
+  .audit-journey-cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .audit-journey-next {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 24px;
+  }
+  .owned-pilot-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .audit-journey-next .button {
+    align-self: flex-start;
+  }
+}

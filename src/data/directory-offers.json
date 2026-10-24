@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "source": "todo_lima_supabase_public_projection",
-  "directory_sha256": "366e0bdd1b1635f591817b5479aa16f023e2e6925fcfcd1240847c6d656a7535",
+  "directory_sha256": "213d2fda126d563610ccaa0234dd3d55aac78a1c39743d7da7298fef596cb6a5",
   "taxonomy_sha256": "a7ea11e09e409d7408e08709897d5e39aa3c0440a449c3f11cfc275454903d10",
   "areas": [
     {
@@ -819,5 +819,5 @@
       "path": "/belleza-y-cuidado-personal/estudios-de-piercing"
     }
   ],
-  "content_sha256": "5180870eddc4d895f8bc0934bcc0b6f10b11cd59aaad17a3d9815f70413ca1d8"
+  "content_sha256": "2fa6510f3f8d896e556c488c0ea9b09b5b672043f95498c5a7046fb26fcd15e4"
 }

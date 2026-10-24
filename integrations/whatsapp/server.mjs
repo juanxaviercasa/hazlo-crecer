@@ -1,0 +1,12 @@
+import http from 'node:http';
+import {respond} from './agent.mjs';
+const html=`<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hazlo Crecer — laboratorio WhatsApp</title><style>body{font:16px/1.7 system-ui;background:#f7f5ef;color:#17251d;max-width:800px;margin:48px auto;padding:24px}textarea{width:100%;box-sizing:border-box;padding:16px;font:inherit}button{background:#176b45;color:white;border:0;border-radius:8px;padding:14px 24px;font:inherit;margin:16px 0}pre{white-space:pre-wrap;background:white;padding:24px;border:1px solid #c6d2c8}</style><h1>Laboratorio de atención</h1><p>Prueba local sin conexión a WhatsApp, sin mensajes enviados y sin API de pago. Motor de reglas; todavía no usa un modelo de IA.</p><form id="form"><label for="message">Mensaje ficticio del cliente</label><textarea id="message" required maxlength="2000"></textarea><button>Probar respuesta</button></form><pre id="output" aria-live="polite">Esperando un mensaje de prueba.</pre><script>document.querySelector('#form').onsubmit=async e=>{e.preventDefault();const r=await fetch('/simulate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:document.querySelector('#message').value})});document.querySelector('#output').textContent=JSON.stringify(await r.json(),null,2);};</script></html>`;
+http.createServer(async(req,res)=>{
+ const origin=req.headers.origin;
+ const json=(v,status=200)=>{res.writeHead(status,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(JSON.stringify(v));};
+ if(req.method==='GET'&&req.url==='/'){res.writeHead(200,{'Content-Type':'text/html;charset=utf-8','Cache-Control':'no-store'});res.end(html);return;}
+ if(req.method==='GET'&&req.url==='/health'){json({mode:'simulation',whatsappConnected:false,paidApiEnabled:false,outboundEnabled:false});return;}
+ if(req.method!=='POST'||req.url!=='/simulate'){json({error:'not_found'},404);return;}
+ if(origin&&!['http://127.0.0.1:5190','http://localhost:5190'].includes(origin)){json({error:'invalid_origin'},403);return;}
+ try{let body='';for await(const chunk of req){body+=chunk;if(Buffer.byteLength(body)>8000)throw Error();}const data=JSON.parse(body);if(typeof data.message!=='string'||data.message.length>2000)throw Error();json({mode:'simulation',sent:false,...respond(data.message)});}catch{json({error:'invalid_message'},400);}
+}).listen(5190,'127.0.0.1',()=>console.log('WhatsApp pilot simulator: http://127.0.0.1:5190 (no outbound messages)'));

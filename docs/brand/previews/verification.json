@@ -1,0 +1,272 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "path": "/",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "path": "/servicios",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "path": "/sectores",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "path": "/resultados",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "path": "/auditoria",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "path": "/privacidad",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "path": "/libro-de-reclamaciones",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 768,
+      "path": "/",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "path": "/servicios",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "path": "/sectores",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "path": "/resultados",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "path": "/auditoria",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "path": "/privacidad",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "path": "/libro-de-reclamaciones",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 375,
+      "path": "/",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 375,
+      "path": "/servicios",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 375,
+      "path": "/sectores",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 375,
+      "path": "/resultados",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 375,
+      "path": "/auditoria",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 375,
+      "path": "/privacidad",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 375,
+      "path": "/libro-de-reclamaciones",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 320,
+      "path": "/",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "path": "/servicios",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "path": "/sectores",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "path": "/resultados",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "path": "/auditoria",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "path": "/privacidad",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "path": "/libro-de-reclamaciones",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 812,
+      "path": "/",
+      "viewport": 812,
+      "scroll": 812
+    },
+    {
+      "width": 812,
+      "path": "/servicios",
+      "viewport": 812,
+      "scroll": 812
+    },
+    {
+      "width": 812,
+      "path": "/sectores",
+      "viewport": 812,
+      "scroll": 812
+    },
+    {
+      "width": 812,
+      "path": "/resultados",
+      "viewport": 812,
+      "scroll": 812
+    },
+    {
+      "width": 812,
+      "path": "/auditoria",
+      "viewport": 812,
+      "scroll": 812
+    },
+    {
+      "width": 812,
+      "path": "/privacidad",
+      "viewport": 812,
+      "scroll": 812
+    },
+    {
+      "width": 812,
+      "path": "/libro-de-reclamaciones",
+      "viewport": 812,
+      "scroll": 812
+    }
+  ],
+  "errors": [],
+  "zoom": {
+    "width": 1440,
+    "scroll": 1440,
+    "zoom": "2"
+  },
+  "contrast": [
+    {
+      "selector": ".premium-hero h1",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(16, 45, 34)",
+      "ratio": 14.783684134555457
+    },
+    {
+      "selector": ".premium-hero h1 span",
+      "foreground": "rgb(169, 237, 188)",
+      "background": "rgb(16, 45, 34)",
+      "ratio": 10.930666034356115
+    },
+    {
+      "selector": ".premium-lead",
+      "foreground": "rgb(216, 230, 221)",
+      "background": "rgb(16, 45, 34)",
+      "ratio": 11.462707808299717
+    },
+    {
+      "selector": ".premium-assurance",
+      "foreground": "rgb(216, 230, 221)",
+      "background": "rgb(16, 45, 34)",
+      "ratio": 11.462707808299717
+    },
+    {
+      "selector": ".premium-actions .button",
+      "foreground": "rgb(16, 45, 34)",
+      "background": "rgb(81, 237, 123)",
+      "ratio": 9.679478411726226
+    },
+    {
+      "selector": ".premium-secondary",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(16, 45, 34)",
+      "ratio": 14.783684134555457
+    },
+    {
+      "selector": ".premium-preview p",
+      "foreground": "rgb(82, 100, 88)",
+      "background": "rgb(247, 245, 239)",
+      "ratio": 5.797408559538582
+    }
+  ],
+  "keyboard": {
+    "name": "Saltar al contenido",
+    "outline": "solid"
+  },
+  "form": "mocked error, retry, stable idempotency key, success and reload verified",
+  "mobileMenu": "Escape returns focus",
+  "faq": "Enter expands",
+  "overflow": []
+}

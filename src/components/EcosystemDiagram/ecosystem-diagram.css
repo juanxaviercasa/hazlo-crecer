@@ -1,0 +1,224 @@
+/* Ecosystem Diagram - High End Tech Schematic */
+.ecosystem-container {
+  background: #0f1c16;
+  border: 1px solid rgba(81, 237, 123, 0.2);
+  border-radius: 24px;
+  padding: 36px 32px;
+  color: #e9edef;
+  margin: 32px auto;
+  max-width: 1240px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  font-family: inherit;
+}
+
+.ecosystem-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 36px;
+}
+
+.ecosystem-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #51ed7b;
+  background: rgba(81, 237, 123, 0.1);
+  border: 1px solid rgba(81, 237, 123, 0.25);
+  padding: 4px 12px;
+  border-radius: 100px;
+  margin-bottom: 12px;
+}
+
+.ecosystem-header h3 {
+  font-size: clamp(22px, 2.5vw, 30px);
+  color: #ffffff;
+  margin: 0 0 10px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.ecosystem-header p {
+  color: #aebac1 !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+.ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.ecosystem-card {
+  background: #14231c;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 22px 18px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.ecosystem-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(81, 237, 123, 0.4);
+}
+
+.ecosystem-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.ecosystem-step {
+  font-size: 12px;
+  font-weight: 800;
+  color: #51ed7b;
+  font-family: monospace;
+}
+
+.ecosystem-icon {
+  font-size: 20px;
+}
+
+.ecosystem-badge {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #8696a0;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2px 7px;
+  border-radius: 6px;
+}
+
+.ecosystem-card h4 {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0 0 8px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.ecosystem-tech-pill {
+  font-size: 11px;
+  color: #a9edbc;
+  background: rgba(81, 237, 123, 0.08);
+  padding: 3px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 12px;
+  font-family: monospace;
+}
+
+.ecosystem-desc {
+  font-size: 12.5px !important;
+  color: #aebac1 !important;
+  line-height: 1.5 !important;
+  margin: 0 0 16px !important;
+  flex: 1;
+}
+
+.ecosystem-footer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #51ed7b;
+  font-weight: 600;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.ecosystem-status-dot {
+  width: 6px;
+  height: 6px;
+  background: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #25d366;
+}
+
+.ecosystem-connector {
+  position: absolute;
+  right: -13px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: #176b45;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.ecosystem-kpi-bar {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 16px;
+}
+
+.kpi-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+}
+
+.kpi-item strong {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.kpi-item span {
+  font-size: 12px;
+  color: #8696a0;
+}
+
+.kpi-divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 990px) {
+  .ecosystem-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ecosystem-connector {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .ecosystem-container {
+    padding: 24px 16px;
+  }
+  .ecosystem-grid {
+    grid-template-columns: 1fr;
+  }
+  .ecosystem-kpi-bar {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .kpi-divider {
+    width: 60px;
+    height: 1px;
+  }
+}
